@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlankComponent } from '../components/blank/blank.component';
 import { SectionComponent } from '../components/section/section.component';
 import { FormsModule } from '@angular/forms';
+import { TrCurrencyPipe } from 'tr-currency';
 
 
 
@@ -13,13 +14,15 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     BlankComponent, 
     SectionComponent,
-    FormsModule
+    FormsModule,
+    TrCurrencyPipe
   ],
   exports: [
     CommonModule,
     BlankComponent, 
     SectionComponent,
-    FormsModule
+    FormsModule,
+    TrCurrencyPipe
   ]
 })
 export class SharedModule { }

@@ -4,6 +4,7 @@ import { LayoutsComponent } from './components/layouts/layouts.component';
 import { HomeComponent } from './components/home/home.component';
 import { inject } from '@angular/core';
 import { AuthService } from './services/auth.service';
+import { ExamplesComponent } from './components/examples/examples.component';
 
 export const routes: Routes = [
     {
@@ -18,6 +19,10 @@ export const routes: Routes = [
             {
                 path: "",
                 component: HomeComponent
+            },
+            {
+                path: "examples",
+                component: ExamplesComponent
             }
         ]
     }

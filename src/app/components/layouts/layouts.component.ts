@@ -13,5 +13,5 @@ import { ControlSidebarComponent } from './control-sidebar/control-sidebar.compo
   styleUrl: './layouts.component.css'
 })
 export class LayoutsComponent {
-
+  
 }
