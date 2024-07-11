@@ -4,6 +4,8 @@ import { BlankComponent } from '../components/blank/blank.component';
 import { SectionComponent } from '../components/section/section.component';
 import { FormsModule } from '@angular/forms';
 import { TrCurrencyPipe } from 'tr-currency';
+import { FlexiGridModule } from 'flexi-grid';
+import { FlexiSelectModule } from 'flexi-select';
 
 
 
@@ -15,14 +17,18 @@ import { TrCurrencyPipe } from 'tr-currency';
     BlankComponent, 
     SectionComponent,
     FormsModule,
-    TrCurrencyPipe
+    TrCurrencyPipe,
+    FlexiGridModule,
+    FlexiSelectModule
   ],
   exports: [
     CommonModule,
     BlankComponent, 
     SectionComponent,
     FormsModule,
-    TrCurrencyPipe
+    TrCurrencyPipe,
+    FlexiGridModule,
+    FlexiSelectModule
   ]
 })
 export class SharedModule { }

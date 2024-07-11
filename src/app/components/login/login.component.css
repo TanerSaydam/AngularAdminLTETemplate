@@ -1,0 +1,11 @@
+.login-row{
+    width: 99%;
+}
+
+.login-part-2{
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

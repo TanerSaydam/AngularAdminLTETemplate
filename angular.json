@@ -51,7 +51,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/ngx-spinner/animations/ball-clip-rotate-multiple.css"
+              "./node_modules/flexi-toast/src/flexi-toast.css"
             ],
             "scripts": []
           },

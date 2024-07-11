@@ -14,7 +14,7 @@ export const routes: Routes = [
     {
         path: "",
         component: LayoutsComponent,
-        canActivateChild: [()=> inject(AuthService).isAuthenticated()],
+        //canActivateChild: [()=> inject(AuthService).isAuthenticated()],
         children: [
             {
                 path: "",

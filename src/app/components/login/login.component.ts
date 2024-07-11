@@ -14,16 +14,18 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   model: LoginModel = new LoginModel();
- 
+  isLoading: boolean = false;
+
   constructor(
     private http: HttpService,
     private router: Router
   ){}
 
   signIn(){
+    this.isLoading = true;
     this.http.post<LoginResponseModel>("Auth/Login",this.model,(res)=> {
       localStorage.setItem("token", res.token);
       this.router.navigateByUrl("/");
-    });
+    },()=> this.isLoading = false);
   }
 }
